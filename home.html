@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>home</title>
+
+   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+   
+<header class="header">
+
+   <section class="flex">
+      
+      <a href="home.html" class="logo"><img src="images/image333.jpg" style="width:50px; height:50px;">Mr.Icecream </a>
+
+      <nav class="navbar">
+         <a href="home.html">Home</a>
+         <a href="http://localhost/products.php">Menu</a>
+		 <a href="about.html">About</a>
+         
+      </nav>
+
+      <div class="icons">
+         <div id="user-btn" class="fas fa-user"></div>
+         <div id="menu-btn" class="fas fa-bars"></div>
+      </div>
+
+      <div class="profile">
+         <p class="account"><a href="login.html">login</a> or <a href="register.html">register</a></p>
+      </div>
+
+   </section>
+
+</header>
+
+<section class="home">
+
+   <div class="swiper home-slider">
+
+      <div class="swiper-wrapper">
+
+         <div class="swiper-slide slide">
+            <div class="content">
+               <span>order Icecream</span>
+               <h3>Let's Get Ice cream</h3>
+               <a href="http://localhost/products.php" class="btn">see menus</a>
+            </div>
+            <div class="image">
+               <img src="images/home1.png" alt="">
+            </div>
+         </div>
+
+         <div class="swiper-slide slide">
+            <div class="content">
+               <span>order online</span>
+               <h3>find your flavour</h3>
+               <a href="http://localhost/products.php" class="btn">see menus</a>
+            </div>
+            <div class="image">
+               <img src="images/home2.png" alt="">
+            </div>
+         </div>
+
+         <div class="swiper-slide slide">
+            <div class="content">
+               <span>order online</span>
+               <h3>best flavours from us</h3>
+               <a href="http://localhost/products.php" class="btn">see menus</a>
+            </div>
+            <div class="image">
+               <img src="images/home3.png" alt="">
+            </div>
+         </div>
+
+      </div>
+
+      <div class="swiper-pagination"></div>
+
+   </div>
+
+</section>
+
+<!--description-->
+
+<section class="products">
+
+   <h1 class="title">Our Ice Cream Gallery</h1>
+
+   <div class="box-container">
+
+      <form accept="" method="post" class="box">
+         <img src="images/gallery1.jpg" alt="">
+         <div class="name">Strawberry icecream</div>
+      </form>
+
+      <form accept="" method="post" class="box">
+         <img src="images/gallery2.jpg" alt="">
+         <div class="name">chocolate vanila mix icecream</div>
+      </form>
+
+      <form accept="" method="post" class="box">
+         <img src="images/gallery3.jpg" alt="">
+         <div class="name">Strawberry icecream</div>
+      </form>
+
+      <form accept="" method="post" class="box">
+         <img src="images/gallery4.jpg" alt="">
+         <div class="name">chocolate vanila mix icecream</div>
+      </form>
+
+      <form accept="" method="post" class="box">
+         <img src="images/gallery7.jpg" alt="">
+         <div class="name">chocolate icecream</div>
+      </form>
+
+      <form accept="" method="post" class="box">
+         <img src="images/gallery8.jpg" alt="">
+         <div class="name">Strawberry icecream</div>
+      </form>
+
+   </div>
+
+  
+
+</section>
+
+
+
+
+
+
+
+
+<footer class="footer">
+
+   <section class="box-container">
+
+      <div class="box">
+      
+         <h3>our email</h3>
+         <a href="mailto:theekshanaamaraweera@gmail.com">theekshanaamaraweera@gmail.com</a>
+         <a href="mailto:theekshanaamaraweera@gmail.com">theekshanaamaraweera@gmail.com</a>
+      </div>
+
+      <div class="box">
+    
+         <h3>opening hours</h3>
+         <p>09:00am to 10:00pm </p>
+      </div>
+
+      <div class="box">
+      
+         <h3>our address</h3>
+         <a href="https://www.google.com/maps">SriLanka Matara </a>
+      </div>
+
+      <div class="box">
+         
+         <h3>our number</h3>
+         <a href="tel:1234567890">0769652149</a>
+         <a href="tel:1112223333">0778890012</a>
+      </div>
+
+   </section>
+
+   <div class="credit">&copy; copyright @ 2023 by <span>web design group of NIBM</span> | all rights reserved!</div>
+
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="loader">
+   <img src="images/icecream.gif" alt="">
+</div>
+
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+<script src="js/script.js"></script>
+
+<script>
+
+var swiper = new Swiper(".home-slider", {
+   loop:true,
+   grabCursor:true,
+   effect: "flip",
+   pagination: {
+      el: ".swiper-pagination",
+      clickable:true,
+   },
+});
+
+</script>
+
+</body>
+</html>
